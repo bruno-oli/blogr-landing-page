@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Lightred: hsl(356, 100%, 66%);
+  --VerylightredCTAhoverbackground: hsl(355, 100%, 74%);
+  --Verydarkblueheadings: hsl(208, 49%, 24%);
+
+  /* Neutral */
+
+  --Whitetext: hsl(0, 0%, 100%);
+  --Grayishbluefootertext: hsl(240, 2%, 79%);
+  --Verydarkgrayishbluebodycopy: hsl(207, 13%, 34%);
+  --Verydarkblackbluefooterbackground: hsl(240, 10%, 16%);
+
+  /* Gradient */
+  /* Background gradient - Intro/CTA mobile nav */
+
+  --Verylightred: hsl(13, 100%, 72%);
+  --Lightred: hsl(353, 100%, 62%);
+
+  /*Background gradient - body*/
+
+  --Verydarkgrayblue: hsl(237, 17%, 21%);
+  --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
+}
+
+@media (max-width: 600px)
+{
+  header {
+    background: linear-gradient(to right bottom, var(--Verylightred) 35%, var(--Lightred));
+    padding: 9vh 6vw;
+    border-bottom-left-radius: 22vw;
+  }
+  nav {
+    display: flex;
+    height: 5vh;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-menu {
+    cursor: pointer;
+  }
+  header h1 {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 13vh;
+  }
+  header p {
+    color: white;
+    font-family: "Ubunto", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    opacity: 80%;
+    margin: 2vh 0 6vh 0;
+  }
+  .container-1 {
+    padding: 0 5vw 7vh 5vw;
+  }
+  .start {
+    display: flex;
+    justify-content: center;
+  }
+  .start button:first-child {
+    margin-right: 4vw;
+    background-color: white;
+    border: none;
+    width: 35vw;
+    height: 7vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--Lightred);
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+  .start button:not(:first-child) {
+    background: none;
+    border: solid 2px white;
+    width: 35vw;
+    height: 7vh;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border-radius: 10vw;
+    cursor: pointer;
+  }
+}
