@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: "Overpass", sans-serif;
+}
+
+p {
+  font-family: "Ubunto", sans-serif;
+}
+
 :root {
   --Lightred: hsl(356, 100%, 66%);
   --VerylightredCTAhoverbackground: hsl(355, 100%, 74%);
@@ -35,7 +43,7 @@
 @media (max-width: 600px)
 {
   header {
-    background: linear-gradient(to right bottom, var(--Verylightred) 35%, var(--Lightred));
+    background: linear-gradient(to right bottom, var(--Verylightred) 20%, var(--Lightred));
     padding: 9vh 6vw;
     border-bottom-left-radius: 22vw;
   }
@@ -91,5 +99,45 @@
     color: white;
     border-radius: 10vw;
     cursor: pointer;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10vh 0;
+  }
+  main h1 {
+    color: var(--Verydarkblueheadings);
+    font-size: 27px;
+    margin-bottom: 4vh;
+  }
+  main p {
+    margin: 0 10vw;
+    color: var(--Grayishbluefootertext);
+    font-weight: bold;
+    line-height: 3.7vh;
+    margin-bottom: 6vh;
+  }
+  .designed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .designed img {
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+    width: 98vw;
+  }
+  .introducing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .robust {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
