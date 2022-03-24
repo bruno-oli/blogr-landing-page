@@ -16,6 +16,10 @@ p {
   font-family: "Ubunto", sans-serif;
 }
 
+body, html {
+  overflow-x: hidden;
+}
+
 :root {
   --Lightred: hsl(356, 100%, 66%);
   --VerylightredCTAhoverbackground: hsl(355, 100%, 74%);
@@ -165,5 +169,60 @@ p {
     font-weight: normal;
     text-align: center;
     opacity: 100%;
+  }
+  .free-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9vw;
+  }
+  .free-open img {
+    margin-top: 7vw;
+    margin-bottom: 7vw;
+  }
+  .free-open p {
+    text-align: center;
+    width: 80vw;
+  }
+  .powerful {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    background-color: var(--Verydarkblackbluefooterbackground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 22vw;
+    padding: 17vw 0vw 11vw 0vw;
+  }
+  footer > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer h1 {
+    font-family: "Overpass", sans-serif;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 6vw;
+  }
+  footer a {
+    font-family: "Ubunto", sans-serif;
+    color:white;
+    opacity: 70%;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  footer div > a {
+    margin-bottom: 3vw;
+  }
+  footer img {
+    margin-bottom: 20vw;
+  }
+  footer > div a:last-child {
+    margin-bottom: 6vw;
   }
 }
