@@ -16,6 +16,10 @@ p {
   font-family: "Ubunto", sans-serif;
 }
 
+button {
+  cursor: pointer;
+}
+
 body, html {
   overflow-x: hidden;
 }
@@ -153,12 +157,10 @@ body, html {
     border-top-right-radius: 20vw;
     border-bottom-left-radius: 20vw;
     margin-top: 50vw;
-    padding-top: 60vw;
   }
   .state img:first-child {
     width: 100vw;
-    position: absolute;
-    top: 460vw;
+    position: relative;
     z-index: 2;
   }
   .state h1 {
@@ -224,5 +226,109 @@ body, html {
   }
   footer > div a:last-child {
     margin-bottom: 6vw;
+  }
+  .desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile {
+    display: none;
+  }
+  header {
+    background: linear-gradient(to right, var(--Verylightred), var(--Lightred) 80%);
+    padding-bottom: 12vh;
+    border-bottom-left-radius: 5vw;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+  }
+  nav a:not(:last-child) {
+    margin-right: 3vw;
+  }
+  nav a::after {
+    content: url(../images/icon-arrow-light.svg);
+    position: relative;
+    right: -0.6vw;
+  }
+  nav img:first-child {
+    margin-right: 5vw;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    padding: 0 14vw;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .login {
+    display: flex;
+    align-items: center;
+    font-family: "Overpass", sans-serif;
+  }
+  .login button {
+    font-size: 1vw;
+    cursor: pointer;
+  }
+  .login button:first-child {
+    background: none;
+    border: none;
+    color: white;
+  }
+  .login button:not(:first-child) {
+    background-color: white;
+    border: none;
+    border-radius: 5vw;
+    width: 9vw;
+    height: 6vh;
+    font-weight: bold;
+    color: var(--Lightred);
+    margin-left: 2vw;
+  }
+  .container-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+  }
+  .container-1 h1 {
+    font-size: 3.5vw;
+    margin-bottom: 1vh;
+  }
+  .container-1 p {
+    opacity: 80%;
+  }
+  .start {
+    margin-top: 7vh;
+    display: flex;
+    align-items: center;
+  }
+  .start button {
+    width: 10vw;
+    height: 6vh;
+    background: none;
+    border: none;
+    font-family: "Overpass", sans-serif;
+    font-size: 16px;
+    border-radius: 2vw;
+    font-weight: bold;
+  }
+  .start button:first-child {
+    background-color: white;
+    color: var(--Lightred);
+  }
+  .start button:not(:first-child) {
+    border: solid 1px white;
+    color: white;
+    margin-left: 1vw;
   }
 }
