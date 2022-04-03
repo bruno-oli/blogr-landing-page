@@ -120,7 +120,7 @@ body, html {
     margin-bottom: 4vh;
   }
   main p {
-    margin: 0 10vw;
+    width: 90vw;
     color: var(--Grayishbluefootertext);
     font-weight: bold;
     line-height: 3.7vh;
@@ -156,7 +156,7 @@ body, html {
     background-image: linear-gradient(to right bottom, var(--Verydarkgrayblue), var(--Verydarkdesaturatedblue) 60%);
     border-top-right-radius: 20vw;
     border-bottom-left-radius: 20vw;
-    margin-top: 50vw;
+    margin-top: 20vw;
   }
   .state img:first-child {
     width: 100vw;
@@ -330,5 +330,121 @@ body, html {
     border: solid 1px white;
     color: white;
     margin-left: 1vw;
+  }
+  #h1-designed {
+    display: flex;
+    justify-content: center;
+    margin-top: 16vh;
+    color: var(--Verydarkgrayblue);
+  }
+  .intro {
+    display: flex;
+    position: relative;
+    bottom: 6vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 10vw;
+  }
+  .intro p {
+    width: 40vw;
+    font-family: "Ubunto", sans-serif;
+    line-height: 1.8vw;
+    color: var(--Verydarkgrayishbluebodycopy);
+    font-weight: bold;
+    opacity: 60%;
+  }
+  .intro img {
+    width: 55vw;
+    transform: translateX(13vw);
+  }
+  .intro h2 {
+    font-family: "Overpass", sans-serif;
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 24px;
+    margin-bottom: 5vh;
+  }
+  .p-padding {
+    margin-bottom: 8vh;
+  }
+  .state-d {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+    background-image: linear-gradient(to right, var(--Verydarkgrayblue), var(--Verydarkdesaturatedblue) 80%);
+    height: 25vw;
+    border-bottom-left-radius: 6vw;
+    border-top-right-radius: 6vw;
+    color: white;
+  }
+  .state-d img {
+    width: 39vw;
+  }
+  .state-d h1 {
+    font-size: 30px;
+    margin-bottom: 2vh;
+  }
+  .state-d p{
+    opacity: 70%;
+    width: 38vw;
+  }
+  .free-d {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10vw 0 0;
+    margin-top: 10vw;
+  }
+  .free-d img {
+    width: 55vw;
+    transform: translateX(-15.5vw);
+  }
+  .free-d h2 {
+    font-family: "Overpass", sans-serif;
+    color: var(--Verydarkdesaturatedblue);
+    font-size: 24px;
+    margin-bottom: 5vh;   
+  }
+  .free-d p {
+    width: 35vw;
+    font-family: "Ubunto", sans-serif;
+    line-height: 1.8vw;
+    color: var(--Verydarkgrayishbluebodycopy);
+    font-weight: bold;
+    opacity: 60%;
+  }
+  footer img {
+    width: 6vw;
+  }
+  footer {
+    background-color: var(--Verydarkgrayblue);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 30vh;
+    padding: 4vh 15vw;
+    margin-top: 10vh;
+    border-top-right-radius: 5vw;
+  }
+  footer div:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+  }
+  footer h1 {
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 2vh;
+    margin-top: 1vh;
+  }
+  footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    opacity: 85%;
+    font-family: "Overpass", sans-serif;
+  }
+  footer a:not(:last-child) {
+    margin-bottom: 1vh;
   }
 }

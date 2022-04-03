@@ -1,0 +1,1 @@
+const menu = document.querySelectorAll(".menu-click")
