@@ -157,6 +157,7 @@ body, html {
     border-top-right-radius: 20vw;
     border-bottom-left-radius: 20vw;
     margin-top: 20vw;
+    padding-top: 5vh;
   }
   .state img:first-child {
     width: 100vw;
@@ -293,6 +294,11 @@ body, html {
     color: var(--Lightred);
     margin-left: 2vw;
   }
+  .login button:not(:first-child):hover {
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.267);
+    color: white;
+  }
   .container-1 {
     display: flex;
     flex-direction: column;
@@ -326,10 +332,20 @@ body, html {
     background-color: white;
     color: var(--Lightred);
   }
+  .start button:first-child:hover {
+    transition: 0.3s;
+    background-color: rgba(255, 255, 255, 0.267);
+    color: white;
+  }
   .start button:not(:first-child) {
     border: solid 1px white;
     color: white;
     margin-left: 1vw;
+  }
+  .start button:not(:first-child):hover {
+    transition: 0.3s;
+    background-color: white;
+    color: var(--Lightred);
   }
   #h1-designed {
     display: flex;
@@ -446,5 +462,8 @@ body, html {
   }
   footer a:not(:last-child) {
     margin-bottom: 1vh;
+  }
+  footer a:hover {
+    text-decoration: underline;
   }
 }
