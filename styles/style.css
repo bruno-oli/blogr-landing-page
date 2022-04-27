@@ -246,15 +246,45 @@ body, html {
     color: white;
     text-decoration: none;
     font-family: "Overpass", sans-serif;
+  }
+  .a-main > a {
     font-weight: bold;
   }
   nav a:not(:last-child) {
     margin-right: 3vw;
   }
-  nav a::after {
+  nav > .nav-links > ul > li > a::after {
     content: url(../images/icon-arrow-light.svg);
     position: relative;
     right: -0.6vw;
+  }
+  nav ul {
+    list-style-type: none;
+  }
+  nav ul li {
+    display: inline;
+    position: relative;
+  }
+  nav ul ul {
+    display: none;
+    position: absolute;
+    width: 14vw;
+    left: 0;
+    background-color: white;
+    border-radius: 0.5vw;
+    padding: 3.5vh 1.5vw;
+  }
+  nav ul ul li a {
+    display: block;
+    color: black;
+    font-family: "Overpass", sans-serif;
+  }
+  
+  nav ul ul li a:hover {
+    font-weight: bold;
+  }
+  nav ul li:hover ul {
+    display: block;
   }
   nav img:first-child {
     margin-right: 5vw;
