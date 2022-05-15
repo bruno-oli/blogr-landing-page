@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 * {
   margin: 0;
@@ -20,7 +20,8 @@ button {
   cursor: pointer;
 }
 
-body, html {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -48,10 +49,13 @@ body, html {
   --Verydarkdesaturatedblue: hsl(237, 23%, 32%);
 }
 
-@media (max-width: 600px)
-{
+@media (max-width: 600px) {
   header {
-    background: linear-gradient(to right bottom, var(--Verylightred) 20%, var(--Lightred));
+    background: linear-gradient(
+      to right bottom,
+      var(--Verylightred) 20%,
+      var(--Lightred)
+    );
     padding: 9vh 6vw;
     border-bottom-left-radius: 22vw;
   }
@@ -153,7 +157,11 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(to right bottom, var(--Verydarkgrayblue), var(--Verydarkdesaturatedblue) 60%);
+    background-image: linear-gradient(
+      to right bottom,
+      var(--Verydarkgrayblue),
+      var(--Verydarkdesaturatedblue) 60%
+    );
     border-top-right-radius: 20vw;
     border-bottom-left-radius: 20vw;
     margin-top: 20vw;
@@ -214,7 +222,7 @@ body, html {
   }
   footer a {
     font-family: "Ubunto", sans-serif;
-    color:white;
+    color: white;
     opacity: 70%;
     text-decoration: none;
     font-size: 16px;
@@ -231,6 +239,80 @@ body, html {
   .desktop {
     display: none;
   }
+  .menu-open {
+    top: 7em;
+    border-radius: 8px;
+    position: absolute;
+    width: 90%;
+    min-height: 50%;
+    box-shadow: 0px 7px 11px 7px rgba(0, 0, 0, 0.35);
+    background-color: white;
+    z-index: 10;
+    text-align: center;
+    padding: 1.2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menu-open ul {
+    list-style: none;
+  }
+  .menu-open > ul li a {
+    text-decoration: none;
+    color: var(--Verydarkgrayishbluebodycopy);
+    font-family: "Overpass", sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .menu-pai::after {
+    content: url(../images/icon-arrow-dark.svg);
+    position: relative;
+    right: -2vw;
+    bottom: 1vw;
+  }
+  .menu-open ul li:not(:last-child) {
+    margin-bottom: 1.8em;
+  }
+  .underline {
+    margin: 1em auto;
+    height: 1px;
+    width: 80%;
+    background-color: var(--Verydarkgrayishbluebodycopy);
+    opacity: 0.4;
+  }
+  .login-b {
+    display: block;
+    text-decoration: none;
+    color: var(--Verydarkgrayishbluebodycopy);
+    font-weight: bold;
+    font-family: "Overpass", sans-serif;
+    font-size: 1.5em;
+  }
+  .sign-b {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5em;
+    color: white;
+    background: linear-gradient(to right, var(--Verylightred) 20%, var(--Lightred));
+    text-decoration: none;
+    font-family: "Overpass", sans-serif;
+    font-weight: bold;
+    width: 7em;
+    padding: 0.5em 0;
+    border-radius: 50px;
+    margin-top: 0.7em;
+  }
+  .menu-open ul ul {
+    display: block;
+    margin: 1em auto;
+    padding: 1em;
+    background-color: #EFEFF1;
+    width: 85%;
+    border-radius: 8px;
+  }
+  .menu-open ul ul li a {
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 600px) {
@@ -238,7 +320,11 @@ body, html {
     display: none;
   }
   header {
-    background: linear-gradient(to right, var(--Verylightred), var(--Lightred) 80%);
+    background: linear-gradient(
+      to right,
+      var(--Verylightred),
+      var(--Lightred) 80%
+    );
     padding-bottom: 12vh;
     border-bottom-left-radius: 5vw;
   }
@@ -279,7 +365,7 @@ body, html {
     color: black;
     font-family: "Overpass", sans-serif;
   }
-  
+
   nav ul ul li a:hover {
     font-weight: bold;
   }
@@ -417,7 +503,11 @@ body, html {
     justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
-    background-image: linear-gradient(to right, var(--Verydarkgrayblue), var(--Verydarkdesaturatedblue) 80%);
+    background-image: linear-gradient(
+      to right,
+      var(--Verydarkgrayblue),
+      var(--Verydarkdesaturatedblue) 80%
+    );
     height: 25vw;
     border-bottom-left-radius: 6vw;
     border-top-right-radius: 6vw;
@@ -430,7 +520,7 @@ body, html {
     font-size: 30px;
     margin-bottom: 2vh;
   }
-  .state-d p{
+  .state-d p {
     opacity: 70%;
     width: 38vw;
   }
@@ -449,7 +539,7 @@ body, html {
     font-family: "Overpass", sans-serif;
     color: var(--Verydarkdesaturatedblue);
     font-size: 24px;
-    margin-bottom: 5vh;   
+    margin-bottom: 5vh;
   }
   .free-d p {
     width: 35vw;
@@ -496,4 +586,8 @@ body, html {
   footer a:hover {
     text-decoration: underline;
   }
+}
+
+.on {
+  display: none;
 }
