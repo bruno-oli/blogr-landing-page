@@ -17,11 +17,11 @@
 
 #### Desktop
 
-![](./design/desktop-design.jpg)
+![](./design/desktop-preview.jpg)
 
 #### Mobile
 
-![](./design/mobile-design.jpg)
+![](./design/mobile-preview.jpg)
 
 ### Links
 
