@@ -37,3 +37,4 @@
 
 - Frontend Mentor - [@bruno-oli](https://www.frontendmentor.io/profile/bruno-oli)
 - Twitter - [@realsayden](https://www.twitter.com/realsayden)
+- GitHub - [@bruno-oli](https://github.com/bruno-oli)
