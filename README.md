@@ -19,10 +19,6 @@
 
 ![](./design/desktop-preview.jpg)
 
-#### Mobile
-
-![](./design/mobile-design.jpg)
-
 ### Links
 
 - Live Site: [GitHub Pages](https://bruno-oli.github.io/blogr-landing-page/)
