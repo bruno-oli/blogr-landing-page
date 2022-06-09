@@ -21,7 +21,7 @@
 
 #### Mobile
 
-![](./design/mobile-preview.jpg)
+![](./design/mobile-design.jpg)
 
 ### Links
 
